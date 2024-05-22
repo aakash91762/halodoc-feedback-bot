@@ -10,10 +10,12 @@
     }
 
     #header {
-      display: flex;
-      justify-content: flex-start;
+      /* display: flex; */
+      /* justify-content: flex-start; */
       /* width: 220px; */
       width: 100%;
+      font-weight: bold;
+      font-size: 13px;
     }
 
     .rating-desc {
@@ -21,7 +23,7 @@
       font-size: 12px;
       /* width: 220px; */
       width: 100%;
-      text-align: left;
+      /* text-align: left; */
     }
 
     .comment-desc {
@@ -38,7 +40,8 @@
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: left;
+      /* justify-content: left; */
+      justify-content: center;
       flex-direction: row-reverse;
     }
 
@@ -209,7 +212,7 @@
     if (language == 'id') {
       document.getElementById('header').innerHTML = "Masukanmu Berarti";
       document.getElementById('rating-desc').innerHTML = rating ? 'Nilai yang Diberikan:' : 'Bagaimana kamu menilai bantuan kami hari ini?';
-      document.getElementById('comment-desc').innerHTML = rating ? 'Komentar atau Saran:' : 'Punya komentar atau saran? Sampaikan di kolom di bawah.';
+      document.getElementById('comment-desc').innerHTML = rating ? 'Komentar atau Saran:' : 'Punya komentar atau saran? Sampaikan di kolom di bawah ini.';
       document.getElementById('send-data').innerHTML = 'Kirim Masukan';
       let x = document.getElementById('language');
       x.setAttribute("value", "id");
