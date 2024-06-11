@@ -162,7 +162,7 @@
       <div class="rating-desc" id="rating-desc"></div>
       <form>
         <fieldset class="rating" id="ratings">
-          <!-- <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title=""></label> -->
+          <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title=""></label>
           <!--     <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label> -->
           <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title=""></label>
           <!--     <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label> -->
@@ -200,7 +200,7 @@
       document.getElementById('ratings').classList.add("no-pointer");
       star.checked = true;
 
-      for (let i = 1; i <= 4; i++) {
+      for (let i = 1; i <= 5; i++) {
         document.getElementById('star' + i).disabled = true;
       }
 
